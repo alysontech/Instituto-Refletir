@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instituto Refletir</title>
+  <meta name="description" content="Instituto Refletir: sobre nós, recrutamento, coaching, na mídia, contatos, associação, educacional e edições refletir." />
+  <link rel="shortcut icon" type="image/png" href="logo/Icones/instituto.ico">
+  <meta name="theme-color" content="#002f4d" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#002f4d',
+            accent1: '#f2523d',
+            accent2: '#e58833',
+            accent3: '#900020',
+            darkcustom: '#0A0A0A',
+            graydark: '#404040',
+            graylight: '#E5E5E5',
+            lineOrange: '#f07d22',
+            darkgreen: '#001515',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+<!--CSS-->
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<!-- CORPO -->
+<body>
+
+<!-- Cabeçalho -->
+<header class="bg-primary text-white sticky top-0 z-50 overflow-hidden">
+    <div class="bg-graydark text-xs md:text-sm py-2 px-4 flex justify-end gap-4 border-b border-accent1 poppins-font">
+        <div class="w-full max-w-7xl mx-auto flex justify-end">
+            <span class="text-lineOrange mr-2">Nossos Site:</span>
+            <a href="https://alysontech.github.io/Build-1.5/#home" target="_blank" class="hover:text-accent2 transition-colors duration-200">Associação Refletir</a>
+            <a href="https://refletireducacional.eadplataforma.app/" target="_blank" class="hover:text-accent2 transition-colors duration-200 ml-4">Refletir Educacional</a>
+        </div>
+    </div>
+    
+    <div class="main-header-content w-full max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-2">
+            <img src="logo/Instituto/Inst_branco.png" alt="Logo Instituto Refletir" class="h-10 w-auto">
+        </a>
+        
+        <div id="content-toggle-container" class="flex items-center gap-6 font-medium relative poppins-font overflow-hidden">
+            <div id="nav-and-search" class="flex items-center gap-6 font-medium transition-transform duration-300 ease-in-out transform translate-x-0">
+                <ul class="hidden md:flex items-center gap-6">
+                    <li><a class="nav-link hover:text-accent2 transition-colors duration-200" href="#home">HOME</a></li>
+                    <li><a class="nav-link hover:text-accent2 transition-colors duration-200" href="#sobre">SOBRE</a></li>
+                    <li><a class="nav-link hover:text-accent2 transition-colors duration-200" href="#cursos">CURSOS</a></li>
+                    <li><a class="nav-link hover:text-accent2 transition-colors duration-200" href="indexceo.html">COACHING</a></li>
+                    <li><a class="nav-link hover:text-accent2 transition-colors duration-200" href="#notícias">NOTÍCIAS</a></li>
+                    <li><a class="nav-link hover:text-accent2 transition-colors duration-200" href="#contatos">CONTATO</a></li>
+                </ul>
+                <button id="search-button" class="p-2 rounded-full hover:bg-accent1 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-accent1 focus:outline-none focus:ring-2 focus:ring-accent2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <div id="search-bar" class="absolute inset-y-0 right-0 flex items-center opacity-0 transform translate-x-full w-0">
+                <input type="text" placeholder="Pesquisar..." class="w-full bg-transparent text-white placeholder-gray-500 border-b-2 border-accent2 py-1 focus:outline-none focus:border-accent2" />
+                <button id="close-search-button" class="ml-4 p-2 rounded-full hover:bg-accent1 transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--carrosel-->
+<section id="home" class="relative min-h-[70vh] flex flex-col justify-between pt-24 pb-0 overflow-hidden bg-primary">
+    
+    <div class="absolute inset-0 z-0">
+        <div class="carousel w-full h-full">
+            
+            <div class="absolute inset-0 opacity-0 animate-fade-cycle [animation-delay:0s]">
+                <img src="img/car1.png" class="w-full h-full object-cover" alt="Fundo conceitual 1" />
+            </div>
+            
+            <div class="absolute inset-0 opacity-0 animate-fade-cycle [animation-delay:5s]">
+                <img src="img/car2.png" class="w-full h-full object-cover" alt="Fundo conceitual 2" />
+            </div>
+            
+            <div class="absolute inset-0 opacity-0 animate-fade-cycle [animation-delay:10s]">
+                <img src="img/car3.png" class="w-full h-full object-cover" alt="Fundo conceitual 3" />
+            </div>
+        </div>
+        
+        <div class="absolute inset-0 bg-primary/70"></div>
+    </div>
+
+    <div class="relative z-20 w-full max-w-7xl mx-auto px-4 text-left md:text-left pt-20">
+        <div class="animate-slide-up max-w-2xl">
+            <h1 class="font-sans text-5xl md:text-6x3 font-semibold text-white drop-shadow-xl leading-tight tracking-tight">
+                Excelência em Liderança, Educação e Propósito
+                <br>
+                <span class="text-accent1"></span>
+            </h1>
+        </div>
+    </div>
+    
+<div class="relative z-20 w-full bg-gray-900 py-3 shadow-inner">
+        <div class="w-full max-w-7xl mx-auto px-4">
+            
+            <p class="text-xs uppercase text-white font-bold mb-2 text-center tracking-widest">CLIENTES QUE PASSARAM POR NÓS</p>
+            
+            <div id="carousel-track-container" class="flex transition-transform duration-500 ease-in-out">
+                <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro1.png" alt="aeb" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro2.png" alt="Agropalm" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro3.png" alt="Petrobras" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro4.png" alt="Anglo American" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                     <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro5.png" alt="ARTESP" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                     <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro6.png" alt="OMNI" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro7.png" alt="Nexa" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro8.png" alt="Agropalm" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro9.png" alt="Petrobras" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro10.png" alt="Anglo American" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                     <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro11.png" alt="ARTESP" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                     <div class="flex-shrink-0 w-1/4 md:w-1/6 px-3 py-2">
+                        <img src="img/Clientes/Parceiro12.png" alt="OMNI" class="h-7 md:h-8 mx-auto object-contain opacity-70 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Quem Somos-->
+<section id="sobre" class="py-20 js-scroll bg-gray-50">
+    <div class="mx-auto w-full max-w-7xl px-4">
+        <h2 class="font-sans text-4xl font-extrabold text-primary text-center mb-16">QUEM SOMOS</h2>
+        
+        <div class="mb-12">
+            <div class="border-l-8 border-accent2 pl-6 pb-4 mb-6">
+                <p class="mt-2 text-graydark text-lg leading-relaxed">
+                    O Instituto Refletir é referência no mercado educacional em consultoria, coaching corporativo e institucional, além de cursos profissionalizantes e técnicos.
+                    Desde 2005, somos comprometidos em transformar, liderar e educar com propósito. Aplicamos técnicas e ferramentas avançadas para o desenvolvimento, impactando milhares de vidas e inspirando pessoas e organizações a acreditarem em seu potencial, superarem desafios e construírem um futuro melhor.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-2xl panel-impacto js-scroll js-counter-section mb-16" id="painel-impacto">
+            
+            <h3 class="font-sans text-3xl font-extrabold text-accent2 text-center mb-6 border-b-2 pb-3">Nosso Impacto</h3>
+
+            <div class="mb-10 grid sm:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-6xl font-extrabold text-accent2 leading-none mb-2" id="count-alunos" data-target="3000">+0</div>
+                    <p class="text-gray-600 font-medium">Alunos transformados profissionalmente.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl font-extrabold text-accent2 leading-none mb-2" id="count-educadores" data-target="2500">+0</div>
+                    <p class="text-gray-600 font-medium">Educadores alcançados por nossos programas.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl font-extrabold text-accent2 leading-none mb-2" id="count-gerentes" data-target="50">+0</div>
+                    <p class="text-gray-600 font-medium">Gerentes e líderes em processo de desenvolvimento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="mb-16">
+        <div class="mx-auto w-full max-w-7xl px-4">
+            <h3 class="font-sans text-3xl font-bold text-primary mb-8 text-center">Nossa Essência</h3>
+        </div>
+        <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex overflow-x-scroll pb-4 space-x-6 justify-center">
+                <div class="js-scroll bg-primary text-white p-8 rounded-xl shadow-2xl transition duration-500 hover:rotate-1 hover:scale-[1.02] flex-shrink-0 w-80 cursor-default transform rotate-[-1deg]">
+                    <h4 class="text-2xl font-extrabold mb-2 border-b-2 border-accent2 pb-1">Missão</h4>
+                    <p class="mt-3 text-base font-light leading-relaxed" id="missao-text">Inspirar líderes e equipes a superar barreiras e alcançar objetivos, promovendo desenvolvimento pessoal e corporativo por meio de mentoria, consultoria e treinamentos.</p>
+                </div>
+                <div class="js-scroll bg-white text-primary p-8 rounded-xl shadow-2xl transition duration-500 hover:rotate-1 hover:scale-[1.02] flex-shrink-0 w-80 cursor-default transform rotate-[-1deg] delay-100">
+                    <h4 class="text-2xl font-extrabold mb-2 border-b-2 border-accent2 pb-1">Visão</h4>
+                    <p class="mt-3 text-base text-gray-700 leading-relaxed" id="visao-text">Ser referência nacional no desenvolvimento de líderes, carreiras, vocações e avanço corporativo até 2030.</p>
+                </div>
+                <div class="js-scroll bg-primary text-white p-8 rounded-xl shadow-2xl transition duration-500 hover:rotate-1 hover:scale-[1.02] flex-shrink-0 w-80 cursor-default transform rotate-[-1deg] delay-200">
+                    <h4 class="text-2xl font-extrabold mb-2 border-b-2 border-accent2 pb-1">Valores</h4>
+                    <p class="mt-3 text-base font-light leading-relaxed" id="valores-text">Nossos valores se traduzem em ética, respeito, fé e excelência, guiando relações responsáveis, valorização das diferenças, confiança no potencial humano e o hábito da melhoria contínua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="mb-20">
+  <div class="mx-auto w-full max-w-6xl px-4 text-center">
+    <h3 class="font-sans text-3xl font-bold text-primary mb-12">Nossa Trajetória</h3>
+  </div>
+
+  <div class="relative overflow-x-auto timeline-wrapper px-6">
+    <!-- Linha central -->
+    <div class="absolute top-1/2 left-0 w-full h-1 bg-gray-300 transform -translate-y-1/2"></div>
+
+    <div class="flex space-x-24 items-center relative">
+
+      <!-- Item 1 -->
+      <div class="timeline-item relative flex flex-col items-center text-center w-64 flex-shrink-0">
+        <div class="js-scroll mt-10 bg-white shadow-xl rounded-2xl p-5 border-t-4 border-primary">
+          <h4 class="text-4xl font-extrabold text-accent2">2005</h4>
+          <p class="text-lg font-bold text-primary mt-2">Fundação e Primeiros Cursos</p>
+          <p class="text-sm text-gray-500 mt-1">Nascimento do Instituto focado em informática e idiomas.</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item relative flex flex-col-reverse items-center text-center w-64 flex-shrink-0">
+        <div class="mb-10 bg-white shadow-xl rounded-2xl p-5 border-b-4 border-primary">
+          <h4 class="text-4xl font-extrabold text-accent2">2010</h4>
+          <p class="text-lg font-bold text-primary mt-2">Educação Profissional</p>
+          <p class="text-sm text-gray-500 mt-1">Expansão para cursos técnicos e profissionalizantes.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item relative flex flex-col items-center text-center w-64 flex-shrink-0">
+        <div class="mt-10 bg-white shadow-xl rounded-2xl p-5 border-t-4 border-primary">
+          <h4 class="text-4xl font-extrabold text-accent2">2015</h4>
+          <p class="text-lg font-bold text-primary mt-2">Divisão Corporativa</p>
+          <p class="text-sm text-gray-500 mt-1">Coaching e Consultoria para empresas.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-item relative flex flex-col-reverse items-center text-center w-64 flex-shrink-0">
+        <div class="mb-10 bg-white shadow-xl rounded-2xl p-5 border-b-4 border-primary">
+          <h4 class="text-4xl font-extrabold text-accent2">2025</h4>
+          <p class="text-lg font-bold text-primary mt-2">Olhando para o Futuro</p>
+          <p class="text-sm text-gray-500 mt-1">Consolidação digital e liderança educacional.</p>
+        </div>
+      </div>
+
+      <!-- Item 1 -->
+      <div class="timeline-item relative flex flex-col items-center text-center w-64 flex-shrink-0">
+        <div class="mt-10 bg-white shadow-xl rounded-2xl p-5 border-t-4 border-primary">
+          <h4 class="text-4xl font-extrabold text-accent2">2005</h4>
+          <p class="text-lg font-bold text-primary mt-2">Fundação e Primeiros Cursos</p>
+          <p class="text-sm text-gray-500 mt-1">Nascimento do Instituto focado em informática e idiomas.</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item relative flex flex-col-reverse items-center text-center w-64 flex-shrink-0">
+        <div class="mb-10 bg-white shadow-xl rounded-2xl p-5 border-b-4 border-primary">
+          <h4 class="text-4xl font-extrabold text-accent2">2010</h4>
+          <p class="text-lg font-bold text-primary mt-2">Educação Profissional</p>
+          <p class="text-sm text-gray-500 mt-1">Expansão para cursos técnicos e profissionalizantes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="mx-auto w-full max-w-7xl px-4 text-center mb-10">
+<a href="indexceo.html" class="mt-10 inline-block px-10 py-3 flex justify-center bg-accent1 text-white font-bold text-lg hover:bg-primary transition-colors duration-300 shadow-lg">
+    Conheça o CEO do Instituto
+</a>
+    </div>
+</section>
+
+<!--Grupo Refletir-->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-primary mb-6 js-scroll">Empresas que fazem parte do Instituto Refletir</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-16 js-scroll">
+      O <strong>Instituto Refletir</strong> é composto por empresas que atuam na área educacional e social, 
+      promovendo conhecimento, inovação e transformação de vidas.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 md:gap-16 items-stretch justify-center">
+      
+      <!-- Associação Refletir -->
+      <a href="https://alysontech.github.io/Build-1.5/#home" target="_blank" 
+         class="group flex-col items-center p-6 rounded-2xl shadow-md hover:bg-white 
+                hover:shadow-xl transition-shadow duration-300 text-center">
+        <div class="logo-circle mb-4">
+          <img src="img/Emp_Associacao.png" alt="Logo Refletir Educacional">
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-2">Associação Refletir</h3>
+        <p class="text-gray-600 text-sm">
+          Organização sem fins lucrativos que leva conhecimento e oportunidades para comunidades.
+        </p>
+      </a>
+
+      <!-- Refletir Educacional -->
+      <a href="https://refletireducacional.eadplataforma.app/" target="_blank" 
+         class="group flex-col items-center p-6 rounded-2xl shadow-md hover:bg-white 
+                hover:shadow-xl transition-shadow duration-300 text-center">
+        <div class="logo-circle mb-4">
+          <img src="img/Empresa_Educacional.png" alt="Logo Refletir Educacional">
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-2">Refletir Educacional</h3>
+        <p class="text-gray-600 text-sm">
+          Cursos livres e técnicos voltados à capacitação prática e transformação profissional.
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--Cursos-->
+<section id="cursos" class="py-16 bg-graylight js-scroll">
+  <div class="mx-auto w-full max-w-7xl px-4">
+    <h2 class="font-sans text-4xl font-extrabold text-primary text-center mb-10">Refletir Educacional - Cursos</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+        <img src="img/Cursos/informatica.png" alt="Informática" class="w-full h-56 md:h-64 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-extrabold text-primary uppercase tracking-wide mb-3">INFORMÁTICA</h3>
+          <p class="text-graydark flex-1 leading-relaxed">
+            Domine ferramentas digitais essenciais e esteja pronto para o mercado de trabalho.
+          </p>
+          <a href="#" class="mt-6 inline-flex items-center text-accent3 font-semibold text-sm hover:opacity-90">
+            Compre Agora e Saiba mais
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+        <img src="img/Cursos/Ingles.png" alt="Inglês" class="w-full h-56 md:h-64 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-extrabold text-primary uppercase tracking-wide mb-3">INGLÊS</h3>
+          <p class="text-graydark flex-1 leading-relaxed">
+            Fale, escreva e compreenda inglês com confiança para oportunidades globais.
+          </p>
+          <a href="https://refletireducacional.eadplataforma.app/curso/url-disabled-3" class="mt-6 inline-flex items-center text-accent3 font-semibold text-sm hover:opacity-90">
+            Compre Agora e Saiba mais
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+        <img src="img/Cursos/Programa.png" alt="Python" class="w-full h-56 md:h-64 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-extrabold text-primary uppercase tracking-wide mb-3">PYTHON</h3>
+          <p class="text-graydark flex-1 leading-relaxed">
+            Aprenda Python do básico ao avançado e crie soluções que o mercado valoriza.
+          </p>
+          <a href="#" class="mt-6 inline-flex items-center text-accent3 font-semibold text-sm hover:opacity-90">
+            Compre Agora e Saiba mais
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+        <img src="img/Cursos/Espanhol.png" alt="Espanhol" class="w-full h-56 md:h-64 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-extrabold text-primary uppercase tracking-wide mb-3">Espanhol</h3>
+          <p class="text-graydark flex-1 leading-relaxed">
+            Comunique-se em espanhol de forma prática e abra novas portas no mundo.
+          </p>
+          <a href="#" class="mt-6 inline-flex items-center text-accent3 font-semibold text-sm hover:opacity-90">
+            Compre Agora e Saiba mais
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+        <img src="img/Cursos/Japones.png" alt="Japonês" class="w-full h-56 md:h-64 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-extrabold text-primary uppercase tracking-wide mb-3">JAPONÊS</h3>
+          <p class="text-graydark flex-1 leading-relaxed">
+            Aprenda japonês de forma clara e divertida, conectando você à cultura e oportunidades.
+          </p>
+          <a href="#" class="mt-6 inline-flex items-center text-accent3 font-semibold text-sm hover:opacity-90">
+            Compre Agora e Saiba mais
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+        <img src="img/Cursos/vip.png" alt="VIP" class="w-full h-56 md:h-64 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-extrabold text-primary uppercase tracking-wide mb-3">VIP</h3>
+          <p class="text-graydark flex-1 leading-relaxed">
+            Sistema ágil e eficiente de qualificação, com os melhores professores e horários que se encaixam na sua rotina.
+          </p>
+          <a href="#" class="mt-6 inline-flex items-center text-accent3 font-semibold text-sm hover:opacity-80">Compre Agora e Saiba mais
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </article>     
+    </div>
+  </div>
+<a href="https://refletireducacional.eadplataforma.app/courses" class="mt-10 inline-block px-10 py-3 flex justify-center bg-accent1 text-white font-bold text-lg hover:bg-primary transition-colors duration-300 shadow-lg">
+    Conheça mais Cursos e nossas modalidades
+</a>
+
+</section>
+
+<!--introdução do Coaching Cursos-->
+<section id="coaching" class="py-24 md:py-32 js-scroll bg-darkcustom">
+    <div class="mx-auto w-full max-w-7xl px-4">      
+        <div class="mx-auto max-w-4xl text-center">         
+            <h2 class="brand-wordmark text-5xl md:text-6xl font-extrabold text-white tracking-tighter mb-4 leading-tight">
+                Sua <span class="text-accent3">Liderança</span> no
+                <br>
+                Próximo Nível.
+            </h2>          
+            <blockquote class="text-2xl italic text-white/90 leading-snug my-8 max-w-3xl mx-auto">
+                "Transformamos o potencial em excelência e forjamos legados autênticos e duradouros."
+            </blockquote>
+            <p class="mt-8 text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                Desde 2005, aplicamos ferramentas avançadas de desenvolvimento com uma abordagem única e personalizada. Nossa expertise garante que você não apenas atinja metas, mas também defina um caminho claro e intencional.
+            </p>
+            <a href="indexceo.html" class="mt-10 inline-block px-10 py-3 rounded-md bg-accent3 text-white font-semibold hover:bg-white transition-colors duration-300 shadow-xl">
+                CONHEÇA NOSSOS MÉTODOS E DIAGNÓSTICOS
+            </a>
+                    
+        </div>       
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="mx-auto max-w-4xl text-center">
+    <h2 class="brand-wordmark text-5xl md:text-6xl font-extrabold text-white tracking-tighter mb-4 leading-tight">
+        Coaching Treinamento
+        <br>
+        <br>
+    </h2>
+<!--<h2 class="section-title text-accent1 text-center mb-20">FERRAMENTAS ACELERADORAS</span></h2>-->
+</div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <article class="bg-accent3 rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-2xl border-2 border-transparent hover:border-white text-white">
+        <div class="p-8 flex-1 flex flex-col justify-between h-full min-h-[300px]"> 
+          <span class="text-white text-sm font-semibold mb-2 uppercase tracking-widest opacity-70">TREINAMENTO</span>
+          <h3 class="font-display text-4xl text-white my-4 leading-tight">Brincar Livre</h3>
+          <p class="text-white flex-1 leading-normal text-lg font-light opacity-90">
+            O Brincar no período de vida dos bebês e crianças.
+          </p>
+          <a href="#" class="mt-8 inline-flex items-center text-white font-bold text-sm uppercase hover:text-accent1 transition-colors tracking-wide bg-white/20 hover:bg-white px-4 py-2 rounded-lg self-start">
+            Explorar o Curso
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bg-accent3 rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-2xl border-2 border-transparent hover:border-white text-white">
+        <div class="p-8 flex-1 flex flex-col justify-between h-full min-h-[300px]">
+           <span class="text-white text-sm font-semibold mb-2 uppercase tracking-widest opacity-70">TREINAMENTO</span>
+          <h3 class="font-display text-4xl text-white my-4 leading-tight">Espaço, Tempo e Materialidade</h3>
+          <p class="text-white flex-1 leading-normal text-lg font-light opacity-90">
+            A Construção dos lugares coletivos.
+          </p>
+          <a href="#" class="mt-8 inline-flex items-center text-white font-bold text-sm uppercase hover:text-accent1 transition-colors tracking-wide bg-white/20 hover:bg-white px-4 py-2 rounded-lg self-start">
+            Explorar o Curso
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bg-accent3 rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-2xl border-2 border-transparent hover:border-white text-white">
+        <div class="p-8 flex-1 flex flex-col justify-between h-full min-h-[300px]">
+           <span class="text-white text-sm font-semibold mb-2 uppercase tracking-widest opacity-70">TREINAMENTO</span>
+          <h3 class="font-display text-4xl text-white my-4 leading-tight">Motricidade</h3>
+          <p class="text-white flex-1 leading-normal text-lg font-light opacity-90">
+            As transições corporais.
+          </p>
+          <a href="#" class="mt-8 inline-flex items-center text-white font-bold text-sm uppercase hover:text-accent1 transition-colors tracking-wide bg-white/20 hover:bg-white px-4 py-2 rounded-lg self-start">
+            Explorar o Curso
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!--Clientes que passaram por nós
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-extrabold text-blue-950 text-center mb-12">CLIENTES QUE PASSARAM POR NÓS</h2>
+        
+        <div class="relative">
+            <button id="prev-button" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors duration-200 ml-4">
+                <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            
+            <div class="overflow-hidden">
+                 <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro1.png" alt="AEB Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro2.png" alt="Filhos do Rei Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro3.png" alt="Luka Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro4.png" alt="Luzes&Cores Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro5.png" alt="Network Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro6.png" alt="Nilson Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro7.png" alt="Olti Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro8.png" alt="Siscorp Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro9.png" alt="Terrassos Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro10.png" alt="Todo Mundo Feliz Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro11.png" alt="Via Direta Logo" class="h-16 w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-1/6 flex justify-center items-center p-4">
+                        <img src="img/Clientes/Parceiro12.png" alt="Voluntarios Logo" class="h-16 w-auto object-contain">
+                    </div>
+                </div>
+            </div>
+            
+            <button id="next-button" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors duration-200 mr-4">
+                <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+            </button>
+        </div>
+
+        <div id="pagination-dots" class="flex justify-center gap-2 mt-8">
+        </div>
+    </div>
+</section>-->
+
+<!--Formulário-->
+<section id="contatos" class="py-16 bg-blue-950 text-white flex flex-col items-center">
+    <h2 class="font-sans text-3xl font-extrabold text-white text-center mb-12">ENTRE EM CONTATO</h2>
+    <div class="mx-auto w-full max-w-lg px-4">
+        <form id="meu-formulario" class="grid gap-4">
+            <input name="name" class="rounded-xl border border-white px-4 py-3 text-black" placeholder="Seu nome" required>
+            <div class="grid md:grid-cols-2 gap-4">
+                <input type="email" name="email" class="rounded-xl border border-white px-4 py-3 text-black" placeholder="E-mail" required>
+                <input type="email" name="confirm_email" class="rounded-xl border border-white px-4 py-3 text-black" placeholder="Confirme seu e-mail" required>
+            </div>
+            <input name="phone" class="rounded-xl border border-white px-4 py-3 text-black" placeholder="Telefone ou celular com DDD" required>
+            <textarea name="message" class="rounded-xl border border-white px-4 py-3 text-black" rows="5" placeholder="Descreva seu interesse" required></textarea>
+            <button type="submit" class="px-5 py-3 rounded-xl bg-accent2 text-white font-semibold hover:opacity-90">ENVIAR</button>
+        </form>
+    </div>
+</section>
+
+<!--Maps-->
+<section id="endereco" class="py-16 bg-graylight js-scroll">
+  <div class="max-w-6xl mx-auto px-4">
+    <p class="font-sans text-3xl font-extrabold text-primary text-center">Onde Estamos</p>
+    <div class="mt-6 rounded-2xl overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.9599966405519!2d-46.6392332303672!3d-23.610070969828723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a491a02d6d5%3A0xa94cf78dd9d111cf!2sR.%20Pitangueiras%2C%2093%20-%20Vila%20da%20Sa%C3%BAde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004052-020!5e0!3m2!1spt-BR!2sbr!4v1759549820776!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!--Rodapé-->
+<footer class="bg-primary text-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-graydark pb-10">
+
+            <div class="flex flex-col items-start">
+                <a href="#home" class="mb-4">
+                    <img src="logo/Educacional/edu_branco.png" alt="Instituto Refletir Logo" class="h-10">
+                </a>
+                <p class="text-sm text-slate-300">
+                    Transformando Estratégias em Sucesso.
+                </p>
+                <p class="mt-2 text-sm text-slate-300">
+                    Educação com Propósito e Solidariedade.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Nossos Sites</h3>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li>
+                        <a href="index.html" target="_blank" class="hover:text-accent2 transition-colors duration-200">
+                            Instituto Refletir
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://alysontech.github.io/Build-1.5/#home" target="_blank" class="hover:text-accent2 transition-colors duration-200">
+                            Associação Refletir
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://refletireducacional.eadplataforma.app/" target="_blank" class="hover:text-accent2 transition-colors duration-200">
+                            Refletir Educacional
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Contato</h3>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li>
+                        Email: <a href="mailto:contato@institutorefletir.com.br" target="_blank" class="hover:text-accent2 transition-colors duration-200">
+                            contato@institutorefletir.com.br
+                        </a>
+                    </li>
+                    <li>
+                        WhatsApp: <a href="https://wa.me/+5511971724723" target="_blank" class="hover:text-accent2 transition-colors duration-200">
+                            (11) 97172-4723
+                        </a>
+                    </li>
+                    <li>
+                        Endereço: <a href="https://maps.app.goo.gl/jTpwBA381MdFnYEP6" target="_blank" class="hover:text-accent2 transition-colors duration-200">
+                            Rua Pitangueiras, 93 - Vila da Saúde, São Paulo - SP, 04052-020
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Redes Sociais</h3>
+                <div class="flex flex-col gap-3 text-slate-300">
+                    <a href="https://www.instagram.com/institutorefletir/" target="_blank" class="flex items-center gap-2 hover:text-accent2 transition-colors duration-200">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5A4.25 4.25 0 013.5 16.25v-8.5A4.25 4.25 0 017.75 3.5zm10 1.75a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+                        Instagram Instituto
+                    </a>
+                    <a href="https://www.instagram.com/associacao.refletir/" target="_blank" class="flex items-center gap-2 hover:text-accent2 transition-colors duration-200">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5A4.25 4.25 0 013.5 16.25v-8.5A4.25 4.25 0 017.75 3.5zm10 1.75a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+                        Instagram Associação
+                    </a>
+                    <a href="" target="_blank" class="flex items-center gap-2 hover:text-accent2 transition-colors duration-200">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5A4.25 4.25 0 013.5 16.25v-8.5A4.25 4.25 0 017.75 3.5zm10 1.75a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+                        Instagram Educacional
+                    </a>
+                    <a href="https://wa.me/+5511971724723" target="_blank" class="flex items-center gap-2 hover:text-accent2 transition-colors duration-200">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.031-.967-.273-.1-.472-.149-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.224-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.348.447-.522.149-.174.199-.298.298-.497.099-.198.05-.373-.025-.522-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.508l-.571-.01c-.198 0-.521.074-.792.373s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.099 3.2 5.077 4.367.709.306 1.262.489 1.694.624.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.125-.272-.198-.57-.347zm-5.421 6.089h-.002a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 01-1.51-5.28c.001-5.455 4.436-9.89 9.893-9.89 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.896 6.994c-.003 5.455-4.438 9.89-9.893 9.89zm8.413-18.303A11.815 11.815 0 0012.05.001C5.495 0 .003 5.491 0 12.244a11.94 11.94 0 001.624 6.073L.057 23.943a1.53 1.53 0 001.99 1.99l5.671-1.589a11.904 11.904 0 005.316 1.276h.005c6.553 0 11.945-5.491 11.948-12.244a11.89 11.89 0 00-3.501-8.687z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-sm text-slate-400">
+            <p>Instituto Refletir - Todos os direitos reservados ©2025 Grupo Refletir</p>
+            <p class="mt-1"></p>
+        </div>
+    </div>
+    
+<div class="bg-darkgreen mt-8 py-4 text-center">
+        <div class="max-w-7xl mx-auto px-4 flex justify-center items-center gap-4">
+            <p class="text-sm text-slate-400">Desenvolvido orgulhosamente por AllDev - Software Partner</p>
+            <img src="img/AllDev - Branco e Verde.png" alt="AllDev Logo" class="h-6">
+        </div>
+    </div>
+</footer>
+
+<!--Script-->
+<script src="script.js"> </script>
+
+</body>
+</html>

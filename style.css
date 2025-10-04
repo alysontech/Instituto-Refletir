@@ -1,0 +1,302 @@
+/* ==========================================================
+   ESTILOS BASE (Seu Código Original)
+   ========================================================== */
+.container-lg {
+    max-width: 1200px;
+}
+.brand-wordmark { font-family: 'Playfair Display', serif; }
+.focus-outline:focus { outline: 2px dashed #e58833; outline-offset: 3px; }
+
+/* ==========================================================
+   ESTILOS GERAIS DE SCROLL (js-scroll) - Efeito de Surgimento
+   ========================================================== */
+.js-scroll {
+    opacity: 0;
+    /* Reduzido o translateY para 30px, pois é um visual mais sutil e moderno */
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+.js-scroll.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.timeline-container #timeline-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Usa a variável que o JS calcula */
+    width: var(--timeline-fill-height, 0); 
+    height: 100%;
+    background-color: var(--cor-principal-da-sua-marca, #007bff); /* Use a cor do seu dot */
+    transition: width 0.3s ease-out;
+}   
+
+/* ==========================================================
+   ESTILOS: MENU E BARRA DE PESQUISA (Seu Código Original)
+   ========================================================== */
+#nav-and-search, #search-bar {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+.show-search #nav-and-search {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+.show-search #search-bar {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ==========================================================
+   NOVO EFEITO: CARROSSEL KEN BURNS (Zoom Sutil)
+   ========================================================== */
+
+@keyframes slide-up {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+    animation: slide-up 1.5s ease-out forwards;
+}
+
+/* ==========================================================
+   ESTILOS NOVOS: LINHA DO TEMPO E PAINEL DE IMPACTO
+   ========================================================== */
+
+/* Efeito de surgimento dos itens da Timeline */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.timeline-item.is-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Configuração da Linha Vertical */
+.timeline-container {
+    position: relative;
+    /* Variável CSS que o JS irá atualizar */
+    --timeline-fill-height: 0px; 
+}
+
+/* A linha colorida (Pseudo-elemento ::before) que será preenchida */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* Ajuste para alinhar com os pontos da timeline no HTML da Opção 4 */
+    left: 1.5rem; 
+    width: 4px;
+    background-color: var(--accent2, #e58833); 
+    /* A altura é controlada pela variável CSS que o JS calcula */
+    height: var(--timeline-fill-height); 
+    transition: height 1s ease-out; 
+    z-index: 10;
+}
+.timeline-dot {
+    z-index: 40; /* Garante que o ponto fique acima da linha */
+}
+
+/* Estilo do Acordeão MVV */
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::marker {
+    display: none;
+}
+
+/* ==========================================================
+   NOVO: OPÇÃO 8 - HERO CONCEITUAL COM IMAGEM REVELADA (WIPE)
+   ========================================================== */
+
+.image-reveal-container {
+    /* Garante o contexto de posicionamento do pseudo-elemento ::before */
+    position: relative;
+    z-index: 10;
+}
+
+/* O elemento de máscara (bloco de cor que cobre a imagem) */
+.image-reveal-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Cor de fundo da máscara - use a cor principal do seu tema */
+    background-color: var(--primary, #0056b3); 
+    
+    /* Começa cobrindo a imagem (0% de deslocamento) */
+    transform: translateX(0%);
+    
+    /* A transição longa e elegante para o efeito de "wipe" */
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 30; /* Fica acima da imagem */
+}
+
+/* Quando o js-scroll é ativado no container, a máscara se move 100% para a direita */
+.image-reveal-container.is-active::before {
+    transform: translateX(100%); 
+}
+
+/* ==========================================================
+   NOVO: CARROSSEL DE IMAGENS DE FUNDO COM FADE
+   ========================================================== */
+
+/* Define o ciclo de transição (Fade) para 3 imagens (15s total) */
+@keyframes fade-cycle {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    28% { opacity: 1; }
+    33% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.animate-fade-cycle {
+    animation: fade-cycle 15s infinite;
+}
+
+/* Garante o surgimento do texto principal */
+@keyframes slide-up {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+    animation: slide-up 1.5s ease-out forwards;
+}
+
+/* ======== NOVO LAYOUT: LINHA DO TEMPO HORIZONTAL ======== */
+.timeline-wrapper {
+  position: relative;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #e58833 #f3f4f6; /* Cor-accent2 + cinza-claro */
+}
+
+/* Pontos da linha do tempo */
+.timeline-item .dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  background-color: var(--accent2, #e58833);
+  border: 4px solid #fff;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 0 4px rgba(229,136,51,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover .dot {
+  transform: translate(-50%, -50%) scale(1.2);
+  box-shadow: 0 0 10px rgba(229,136,51,0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .timeline-wrapper {
+    padding-bottom: 3rem;
+  }
+  .timeline-item {
+    width: 80%;
+    margin-right: 3rem;
+  }
+  .timeline-item .dot {
+    width: 18px;
+    height: 18px;
+  }
+/* ==== Seção "Nossas Outras Empresas" ==== */
+.js-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.js-scroll.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section.bg-gray-50 {
+  position: relative;
+  overflow: hidden;
+}
+section.bg-gray-50::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.3), transparent 80%);
+  pointer-events: none;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--accent2, #e58833);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.logo-circle img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+/* ==== Estilo dos logos no layout "holding" ==== */
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--accent2, #e58833);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.logo-circle img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.logo-circle:hover {
+  box-shadow: 0 8px 20px rgba(229, 136, 51, 0.3);
+}
+
+/* Logos dentro de círculos */
+.logo-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--accent2, #e58833);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-circle img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+/* Animação no hover */
+a.group:hover .logo-circle {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(229, 136, 51, 0.3);
+}
+
+}
